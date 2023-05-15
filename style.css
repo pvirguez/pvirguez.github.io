@@ -101,6 +101,46 @@ section {
 }
 
 
+/* PYP Section */
+
+.pyp_section {
+    color: #c8c8c8;
+}
+
+.pyp_section h2 {
+    margin-bottom: 25px;
+}
+
+.pyp_section label {
+    margin-bottom: 5px;
+}
+
+#input {
+    margin-bottom: 10px;
+    width: 50%;
+    height: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px #d8d8d829;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+}
+
+.btn_pyp {
+    width: 50%;
+    height: 35px;
+    font-family: Poppins;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.btn_pyp:hover {
+    background-color: #161616;
+    color: #c8c8c8;
+}
+
+
 /* Modal Section */
 
 .modal {

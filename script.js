@@ -1,3 +1,5 @@
+// Modal Script
+
 // get references to the modal elements
 const modal = document.getElementById('modal');
 const imageButton = document.getElementById('image-button');
@@ -22,3 +24,30 @@ window.addEventListener('click', function(event) {
     modal.style.display = 'none';
   }
 });
+
+
+// Pico & PLaca Script
+
+function checkRestriction() {
+  // Get the input value
+  const input = document.getElementById("input").value;
+  
+  // Get the current date
+  const today = new Date();
+  const dayOfMonth = today.getDate();
+  
+  // Determine if the vehicle can circulate today
+  let canCirculate = false;
+  if (dayOfMonth % 2 == 0 && (input == 6 || input == 7 || input == 8 || input == 9 || input == 0)) {
+      canCirculate = true;
+  } else if (dayOfMonth % 2 == 1 && (input == 1 || input == 2 || input == 3 || input == 4 || input == 5)) {
+      canCirculate = true;
+  }
+  
+  // Display the result
+  if (canCirculate) {
+      document.getElementById("result").innerHTML = "Salga con confianza 🏎️";
+  } else {
+      document.getElementById("result").innerHTML = "Pilo con los tombos 🚔";
+  }
+}
