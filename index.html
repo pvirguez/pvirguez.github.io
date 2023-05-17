@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -31,13 +31,64 @@
 
 
     <!--Hero Section-->
-    <section class="Hero Section">
+    <section class="hero_section">
         <div class="simple_container">
             <img id="image-button" src="./Assets/pedro_profile.png" alt="profile picture pedro" class="image_hero">
             <h1 class="hero_hi">Hi, I'm Pedro 👋</h1>
             <h2 class="hero_tagline">Tech Co-Founder & CEO. Love building tech products and businesses.</h2>
         </div>
     </section>
+
+
+    <!--About Me Section-->
+    <section class="about_me_section">
+        <div class="simple_container">
+            <h2 class="about_me_header">About Me</h2>
+            <p>Entrepreneur at heart. My fist business was selling water back in 2nd grade. Fast forward - I worked at various startups in the US and moved back to my hometown Bogotá, Colombia where I started a set of retail chains and worked for one of the first e-scooter startups to launch in Colombia.<br><br>My goal in life is to bring innovation to LatAm and start ventures that provide value to my region. I'm currently the CEO for Clientti, an automated data-driven messaging platform for non-tech businesses.<br><br>Let's connect!</p>
+        </div>
+    </section>
+
+
+    <!--Projects Section-->
+    <section class="projects_section">
+        <div class="simple_container">
+            <h2 class="projects_header">Some of my projects</h2>
+            <p>Click on the card to open the project</p>
+        </div>
+        <div class="cards">
+            <a href="./yc.html">
+                <div class="card">
+                <h3 class="card_header">YC Motivation</h3>
+                <p class="card_text">Simple JS project to give motivation based on YC's guidelines. The projects basically randomizes 3 arrays to make it seem as a group partners is giving you some words of advice. Oh, and it has a bit of Colombian flare.</p>
+                </div>
+            </a>
+            <a href="./pyp.html">
+                <div class="card">
+                    <h3 class="card_header">Pico & Placa Checker</h3>
+                    <p class="card_text">Bogotá keeps on changing their vehichle mobility rules and I grew tired of remembering the rules. So I created this cool checker that basically tells me if I can drive my car that day or not.</p>
+                </div>
+            </a>
+            <a href="./cc.html">
+                <div class="card">
+                    <h3 class="card_header">Credit card No. Checker</h3>
+                    <p class="card_text">Projects that basically validates a credit card number. One of my first projects, very siomple and to the point based on an algorith I forgot the name off.</p>
+                </div>
+            </a>
+            <a href="rps.html">    
+                <div class="card">
+                    <h3 class="card_header">Rock, Paper, Scissors Game</h3>
+                    <p class="card_text">The classic game. You vs the machine! Just generate a game and basically play the game vs. the computer.</p>
+                </div>
+            </a>
+            <a href="./sleep.html">    
+                <div class="card">
+                    <h3 class="card_header">Sleep Hours</h3>
+                    <p class="card_text">Input your hours and let the computer tell you if you slept enough or not. Simple yet cool, for us insomniacs.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
 
     <!--Pico & Placa Section-->
     <section class="pyp_section">
@@ -49,6 +100,7 @@
             <p id="result"></p>
         </div>
     </section>
+
 
     <!-- Modal -->
     <div id="modal" class="modal">
@@ -68,7 +120,7 @@
 
 
     <!-- JavaScript -->
-    <script src="./script.js"></script>
+    <script src="./JS/script.js"></script>
 
 </body>
 

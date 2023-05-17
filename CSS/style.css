@@ -15,6 +15,20 @@ body {
     background-image: url(./Assets/dots.svg);
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.simple_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    padding: 100px 20px;
+}
+
 
 /* Nav Bar */
 
@@ -57,20 +71,6 @@ nav {
 
 /* Hero Section */
 
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.simple_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1200px;
-    padding: 100px 20px;
-}
-
 .image_hero {
     border-radius: 50%;
     width: 25%;
@@ -98,6 +98,72 @@ section {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+
+/* About Me Section */
+
+.about_me_header {
+    color: #c8c8c8;
+    margin-bottom: 10px;
+}
+
+.about_me_section p {
+    color: #c8c8c8;
+    text-align: center;
+}
+
+
+/* Projects Section */
+
+.projects_header {
+    color: #c8c8c8;
+    margin-bottom: 10px;
+}
+
+.projects_section p {
+    color: #c8c8c8;
+    text-align: left;
+}
+
+.card_header {
+    color: #c8c8c8;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 300px;
+    height: 400px;
+    border: 0.5px  solid #ffffff;
+    margin: 0px 25px 25px 0px;
+    border-radius: 10px;
+    padding: 0px 10px 10px 20px;
+}
+
+.card:hover {
+    background-color: white;
+}
+
+.card:hover .card_header {
+    color: black;
+}
+
+.card:hover .card_text {
+    color: black;
+}
+
+.card_text {
+    height: 50%;
 }
 
 
