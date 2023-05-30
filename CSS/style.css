@@ -282,3 +282,59 @@ nav {
     color: #ff6600;
     text-align: center;
 }
+
+
+  /* RPS Section */
+
+.rps_section {
+    color: #c8c8c8;
+  }
+  
+.rps_section h2 {
+    margin-bottom: 25px;
+  }
+
+.btn_rps {
+    width: 250px;
+    height: 35px;
+    font-family: Poppins;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.btn_rps:hover {
+    background-color: #161616;
+    color: #c8c8c8;
+}
+
+.rps_section label {
+    margin-bottom: 5px;
+}
+
+#rpsInput {
+    margin-bottom: 10px;
+    width: 250px;
+    height: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px #d8d8d829;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+}
+
+.instructions {
+    margin-top: -10px;
+}
+
+.rps_section label {
+    margin: 35px 0px 5px 0px;
+    color: white;
+}
+
+#winner {
+    font-size: 30px;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+}
