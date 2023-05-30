@@ -12,7 +12,7 @@
 body {
     font-family: Poppins;
     background-color: #161616;
-    background-image: url(./Assets/dots.svg);
+    background-image: url(../Assets/dots.svg)
 }
 
 section {
@@ -136,6 +136,7 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-top: -50px;
 }
 
 .card {
@@ -250,4 +251,34 @@ nav {
   .modal_h2 {
     margin-bottom: 10px;
   }
+
+
+  /* YC Section */
+
+  .yc_section {
+    color: #c8c8c8;
+  }
   
+  .yc_section h2 {
+    margin-bottom: 25px;
+  }
+
+  .btn_yc {
+    width: 250px;
+    height: 35px;
+    font-family: Poppins;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.btn_yc:hover {
+    background-color: #161616;
+    color: #c8c8c8;
+}
+
+#ycPhrase {
+    font-size: 50px;
+    color: #ff6600;
+    text-align: center;
+}

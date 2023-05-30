@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Pedro Virgüez | Pico y Placa</title>
+    <link rel="shortcut icon" type="image/gif" href="./Assets/favicon_final.png"/>
+</head>
+
+<body>
+
+    <!--Nav Section-->
+    <nav>
+        <div class="nav-bar-container">
+            <div class="nav-bar-left">
+                <a class="navlink" href="./index.html">Home</a>
+                <a class="navlink" href="mailto:pedro@clientti.com" target="_blank">Get in Touch</a>
+            </div>
+            <div class="nav-bar-right">
+                <a class="navlink" href="https://www.linkedin.com/in/pedrovirguezbogotacolombia/" target="_blank">LinkedIn</a>
+                <a class="navlink" href="https://github.com/pvirguez" target="_blank">GitHub</a>
+                <a class="navlink-end" href="https://www.clientti.com/" target="_blank">What I'm currently working on</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Pico & Placa Section-->
+    <section class="pyp_section">
+        <div class="simple_container">
+            <h2>Pedro's Pico & Placa Restriction Checker</h2>
+            <label for="input">Último dígito de la nave:</label>
+            <input type="text" id="input">
+            <button onclick="checkRestriction()" class="btn_pyp">Consultar</button>
+            <p id="result"></p>
+        </div>
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="./JS/script.js"></script>
+
+
+</body>
+
+</html>
