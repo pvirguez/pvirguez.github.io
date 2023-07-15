@@ -38,6 +38,10 @@ nav {
     padding: 25px 25px 0 25px;
 }
 
+.navlink_mobile {
+    display: none;
+}
+
 .nav-bar-container {
     display: flex;
     justify-content: space-between;
@@ -45,18 +49,18 @@ nav {
     padding: 0 15px 25px 15px;
 }
 
+.nav_end {
+    color: #9a9a9a;
+    margin-right: 0px;
+    font-size: 14px;}
+
 .navlink {
     color: #9a9a9a;
     margin-right: 25px;
     font-size: 14px;
 }
-    
-.navlink-end {
-    color: #9a9a9a;
-    font-size: 14px;
-}
 
-.navlink-end:hover {
+.nav_end:hover {
     color: white;
 }
 
@@ -73,7 +77,7 @@ nav {
 
 .image_hero {
     border-radius: 50%;
-    width: 25%;
+    width: 20%;
     height: auto;
     overflow: hidden;
     margin-bottom: 15px;
@@ -87,17 +91,25 @@ nav {
 
 .hero_hi {
     color: #c8c8c8;
-    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 45px;
     font-size: 14px;
+    font-weight: 200;
 }
 
 .hero_tagline {
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     background: linear-gradient(97.13deg, #E9E9E9 0%, #515151 100%);
     background-clip: text;
+    width: 65%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.about_me_p a {
+    color: #c8c8c8;
+    text-decoration: underline;
 }
 
 
@@ -119,6 +131,10 @@ nav {
 .projects_header {
     color: #c8c8c8;
     margin-bottom: 10px;
+}
+
+.projects_section {
+    margin-bottom: 150px;
 }
 
 .projects_section p {
@@ -260,7 +276,12 @@ nav {
   }
   
   .yc_section h2 {
+    margin-bottom: 15px;
+  }
+
+  .yc_section h4 {
     margin-bottom: 25px;
+    font-weight: 400;
   }
 
   .btn_yc {
@@ -284,7 +305,7 @@ nav {
 }
 
 
-  /* RPS Section */
+/* RPS Section */
 
 .rps_section {
     color: #c8c8c8;
@@ -334,7 +355,153 @@ nav {
 
 #winner {
     font-size: 30px;
-    color: white;
+    color: yellow;
     margin-top: 20px;
     font-weight: bold;
+}
+
+
+/* Mobile Responsive */
+
+@media only screen and (max-width: 480px) {
+    
+    /* Nav Bar Mobile */
+
+    nav {
+        padding: 25px 10px 0 10px;
+    }
+
+    .navlink_mobile {
+        display: inline;
+        margin: 0 2.5px 0 2.5px;
+    }
+
+    .navlink_mobile img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .nav-bar-container {
+        padding: 0 15px 15px 15px;
+    }
+
+    .navlink {
+        color: #9a9a9a;
+        margin-right: 0;
+        font-size: 14px;
+        display: none;
+    }
+
+    .nav_end {
+        display: none;
+    }
+
+    /* Hero Section */
+
+    .image_hero {
+        width: 50%;
+    }
+
+    .hero_tagline {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .hero_hi {
+        margin-bottom: 15px;
+    }
+
+    /* About Me Section */
+
+    .about_me_header {
+        font-size: 20px;
+    }
+
+    .about_me_section p {
+        font-size: 14px;
+    }
+
+
+    /* Projects Section */
+
+    #projects_p {
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: -50px;
+    }
+
+    .card {
+        width: auto;
+        height: auto;
+        margin: 0 5% 30px 5%;
+        padding: 100px 10px 25px 20px;
+    }
+
+    .card:hover {
+        background-color: white;
+    }
+
+    .card:hover .card_header {
+        color: black;
+    }
+
+    .card:hover .card_text {
+        color: black;
+    }
+
+    .card_text {
+        height: 50%;
+    }
+
+
+    /* PYP Section */
+
+    .pyp_section h2 {
+        text-align: center;
+    }
+
+    .pyp_section label {
+        margin-bottom: 10px;
+    }
+
+
+    /* Modal Section */
+
+    .modal-content {
+        padding: 20px 50px;
+        width: 50%;
+    }
+
+
+    /* YC Section */
+
+    .yc_section h2 {
+        text-align: center;
+    }
+
+    .yc_section h4 {
+        text-align: center;
+    }
+
+    #ycPhrase {
+        font-size: 25px;
+    }
+
+
+    /* RPS Section */
+
+    .rps_section h2 {
+        text-align: center;
+    }
+
+    .instructions {
+        text-align: center;
+    }
+
 }
