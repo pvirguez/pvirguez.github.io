@@ -399,8 +399,8 @@ nav {
     /* Hero Section */
 
     .image_hero {
-        width: 50%;
-        height: 50%;
+        width: 200px;
+        height: auto;
         border-radius: 50%;
         object-fit: cover;
     }
