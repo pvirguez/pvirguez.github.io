@@ -1,3 +1,30 @@
+// Scroll Animation Observer
+document.addEventListener('DOMContentLoaded', function() {
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, observerOptions);
+
+  // Observe all elements with fade-in class
+  document.querySelectorAll('.fade-in').forEach(element => {
+    observer.observe(element);
+  });
+
+  // Observe all cards with staggered delay
+  document.querySelectorAll('.card').forEach((card, index) => {
+    card.style.transitionDelay = `${index * 0.1}s`;
+    observer.observe(card);
+  });
+});
+
 // Modal Script
 
 // get references to the modal elements
