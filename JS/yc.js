@@ -1,9 +1,16 @@
   // YC Motivation Script
   function generateRandomMessage() {
     
-    const ycGroupPartner = ['Dalton', 'Michael', 'Gary'];
+    const ycGroupPartner = ['Dalton', 'Michael', 'Gary', 'PG', 'Sam', 'Jessica', 'Harj'];
 
-    const phrase = ['impartiendo sabiduria', 'dando clases', 'preaching'];
+    const phrase = [
+      'the following',
+      'something simple',
+      'a hard truth',
+      'this early on',
+      'advice that stuck',
+      'this during office hours'
+    ];
 
     const ycAdvice = ["Launch now", "Build something people want", "Do things that don't scale", 
     "Find the 90 / 10 solution", "Find 10-100 customers who love your product", "All startups are badly broken at some point", 
@@ -29,5 +36,5 @@
     const randomAdvice = ycAdvice[lastAdviceIndex];
     lastAdviceIndex = (lastAdviceIndex + 1) % ycAdvice.length;
 
-    document.getElementById("ycPhrase").innerHTML = `"${randomGroupPartner} está ${randomPhrase}: ${randomAdvice}."`;
+    document.getElementById("ycPhrase").innerHTML = `"${randomGroupPartner} said ${randomPhrase}: ${randomAdvice}."`;
   }
