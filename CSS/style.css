@@ -571,6 +571,11 @@ nav {
         height: 25px;
     }
 
+    .navlink_mobile .material-symbols-outlined {
+        color: white;
+        font-size: 25px;
+    }
+
     .nav-bar-container {
         padding: 0 15px 15px 15px;
     }
